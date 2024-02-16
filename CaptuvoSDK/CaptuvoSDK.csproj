@@ -1,0 +1,38 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFrameworks>net7.0-ios</TargetFrameworks>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>true</ImplicitUsings>
+    <IsBindingProject>true</IsBindingProject>
+    <!--This part isn't included in the new binding template yet -->
+    <NoBindingEmbedding>false</NoBindingEmbedding>
+    <!-- End addition -->
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <AssemblyName>P42.CaptuvoSDK</AssemblyName>
+    <Version>3.04.1425.2</Version>
+
+  	<EmbedUntrackedSources>true</EmbedUntrackedSources>
+  	<IncludeSymbols>true</IncludeSymbols>
+  	<SymbolPackageFormat>snupkg</SymbolPackageFormat>
+
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Authors>Ben Askren</Authors>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ObjcBindingApiDefinition Include="ApiDefinitions.cs" />
+    <ObjcBindingCoreSource Include="StructsAndEnums.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <NativeReference Include="HoneywellSources\libCaptuvoSDK.a">
+      <Kind>Static</Kind>
+      <ForceLoad>True</ForceLoad>
+      <SmartLink>False</SmartLink>
+      <Frameworks>UIKit, ExternalAccessory</Frameworks>
+    </NativeReference>
+  </ItemGroup>
+
+</Project>

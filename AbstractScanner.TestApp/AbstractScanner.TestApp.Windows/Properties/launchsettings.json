@@ -1,0 +1,10 @@
+{
+	"profiles": {
+		"AbstractScanner.TestApp.Windows (Unpackaged)": {
+			"commandName": "Project"
+		},
+		"AbstractScanner.TestApp.Windows (Package)": {
+			"commandName": "MsixPackage"
+		}
+	}
+}

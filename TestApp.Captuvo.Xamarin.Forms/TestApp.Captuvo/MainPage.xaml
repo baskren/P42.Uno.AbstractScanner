@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:TestApp.Captuvo" x:Class="TestApp.Captuvo.MainPage">
+    <ScrollView>
+        <StackLayout>
+            <!-- Place new controls here -->
+            <Label Text="Welcome to Xamarin.Forms Captuvo TestApp!" HorizontalOptions="Center" VerticalOptions="Center" />
+            <Button x:Name="_button" Text="START CAPTUVO" Clicked="OnButtonClicked" BackgroundColor="DarkGray" TextColor="White" Margin="5"/>
+            <BoxView HeightRequest="1" Color="DarkGray"/>
+            <Label x:Name="_statusLabel" Text="STATUS HERE" />
+            <BoxView HeightRequest="1" Color="DarkGray"/>
+            <Label x:Name="_dataLabel" Text="Data HERE" />
+            <BoxView HeightRequest="1" Color="DarkGray"/>
+            <Button x:Name="_getBatteryInfoButton" Text="GET BATTERY INFO" Clicked="OnGetBatteryInfoButtonClicked"/>
+            <Label x:Name="_batteryConnection"/>
+            <Label x:Name="_batteryPercentLabel" Text="_" />
+            <Label x:Name="_batteryRemainCapacityLabel" Text="_"/>
+            <Label x:Name="_batteryTemperatureLabel" Text="_"/>
+            <Label x:Name="_batteryVoltageLabel" Text="_"/>
+            <Label x:Name="_batteryStatusLabel" Text="_"/>
+            <Label x:Name="_chargeStatusLabel" Text="_"/>
+            <BoxView HeightRequest="1" Color="DarkGray"/>
+            <Label Text="HARDWARE INFORMATION" FontAttributes="Bold"/>
+            <Label x:Name="_hwNameLabel"/>
+            <Label x:Name="_hwModelLabel"/>
+            <Label x:Name="_hwSerialLabel"/>
+            <Label x:Name="_hwFirmwareLabel"/>
+            <Label x:Name="_hwRevisionLabel" />
+            <Label x:Name="_hwManufacturerLabel"/>
+            <Label x:Name="_hwSdkBuildLabel"/>
+            <Label x:Name="_hwSdkFullVersionLabel"/>
+            <Label x:Name="_hwSdkShortVersionLabel"/>
+            <Label x:Name="_hwDebug" />
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

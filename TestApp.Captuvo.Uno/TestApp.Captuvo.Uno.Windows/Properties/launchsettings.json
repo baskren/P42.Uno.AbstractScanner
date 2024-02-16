@@ -1,0 +1,10 @@
+{
+	"profiles": {
+		"TestApp.Captuvo.Uno.Windows (Unpackaged)": {
+			"commandName": "Project"
+		},
+		"TestApp.Captuvo.Uno.Windows (Package)": {
+			"commandName": "MsixPackage"
+		}
+	}
+}

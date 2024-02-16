@@ -1,0 +1,40 @@
+﻿<Page x:Class="AbstractScanner.TestApp.MainPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:local="using:AbstractScanner.TestApp"
+      Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+  <StackPanel
+        Padding="5,25,5,5"
+        HorizontalAlignment="Center"
+        VerticalAlignment="Center">
+            <TextBlock Text="Welcome to UNO PLATFORM Captuvo TestApp!" HorizontalAlignment="Center" VerticalAlignment="Center" />
+            <Button x:Name="_button" Content="START CAPTUVO" Click="OnButtonClick" Background="DarkGray" Foreground="White" Margin="5"/>
+            <Rectangle Height="1" Fill="DarkGray"/>
+            <TextBlock x:Name="_statusTextBlock" Text="STATUS HERE" />
+            <Rectangle Height="1" Fill="DarkGray"/>
+            <TextBlock x:Name="_dataTextBlock" Text="Data HERE" />
+            <Rectangle Height="1" Fill="DarkGray"/>
+            <!--
+    <Button x:Name="_getBatteryInfoButton" Content="GET BATTERY INFO" Click="OnGetBatteryInfoButtonClick"/>
+    -->
+            <TextBlock x:Name="_batteryConnection"/>
+            <TextBlock x:Name="_batteryPercentTextBlock" Text="_" />
+            <TextBlock x:Name="_batteryRemainCapacityTextBlock" Text="_"/>
+            <TextBlock x:Name="_batteryTemperatureTextBlock" Text="_"/>
+            <TextBlock x:Name="_batteryVoltageTextBlock" Text="_"/>
+            <TextBlock x:Name="_batteryStatusTextBlock" Text="_"/>
+            <TextBlock x:Name="_chargeStatusTextBlock" Text="_"/>
+            <Rectangle Height="1" Fill="DarkGray"/>
+            <TextBlock Text="HARDWARE INFORMATION" FontWeight="Bold"/>
+            <TextBlock x:Name="_hwNameTextBlock"/>
+            <TextBlock x:Name="_hwModelTextBlock"/>
+            <TextBlock x:Name="_hwSerialTextBlock"/>
+            <TextBlock x:Name="_hwFirmwareTextBlock"/>
+            <TextBlock x:Name="_hwRevisionTextBlock" />
+            <TextBlock x:Name="_hwManufacturerTextBlock"/>
+            <TextBlock x:Name="_hwSdkBuildTextBlock"/>
+            <TextBlock x:Name="_hwSdkFullVersionTextBlock"/>
+            <TextBlock x:Name="_hwSdkShortVersionTextBlock"/>
+            <TextBlock x:Name="_hwDebug" />
+  </StackPanel>
+</Page>

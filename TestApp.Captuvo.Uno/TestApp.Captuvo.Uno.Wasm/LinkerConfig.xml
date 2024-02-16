@@ -1,0 +1,11 @@
+<linker>
+  <assembly fullname="TestApp.Captuvo.Uno" />
+  <assembly fullname="TestApp.Captuvo.Uno.Wasm" />
+
+  <!--
+  Uncomment this section when using JSON.NET
+  <assembly fullname="System.Core">
+    <type fullname="System.Linq.Expressions*" />
+  </assembly>
+   -->
+</linker>

@@ -1,0 +1,10 @@
+{
+  "background_color": "#ffffff",
+  "description": "TestApp.Captuvo.Uno",
+  "display": "standalone",
+  "name": "TestApp.Captuvo.Uno",
+  "short_name": "TestApp.Captuvo.Uno",
+  "start_url": "/index.html",
+  "theme_color": "#ffffff",
+  "scope": "/"
+}

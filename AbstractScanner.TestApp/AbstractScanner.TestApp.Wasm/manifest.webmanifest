@@ -1,0 +1,10 @@
+{
+  "background_color": "#ffffff",
+  "description": "AbstractScanner.TestApp",
+  "display": "standalone",
+  "name": "AbstractScanner.TestApp",
+  "short_name": "AbstractScanner.TestApp",
+  "start_url": "/index.html",
+  "theme_color": "#ffffff",
+  "scope": "/"
+}
