@@ -1,0 +1,8 @@
+﻿<Project>
+  <PropertyGroup>
+    <DotNetVersion>net7.0</DotNetVersion>
+    <ManagePackageVersionsCentrally>false</ManagePackageVersionsCentrally>
+  </PropertyGroup>
+
+
+</Project>
