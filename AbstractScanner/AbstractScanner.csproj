@@ -56,8 +56,10 @@
   <ItemGroup>
     <PackageReference Include="P42.ZXing.Net.Mobile.Uno" Version="5.0.118" />
     <PackageReference Include="P42.ZXing.Net.Mobile" Version="5.0.118" />
-    <PackageReference Include="P42.Uno.Controls" Version="5.0.118" />
     <PackageReference Include="P42.Uno.Xamarin.Essentials" Version="5.0.118" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\P42.Uno.Controls\P42.Uno.Controls\P42.Uno.Controls.csproj" />
   </ItemGroup>
 
 
