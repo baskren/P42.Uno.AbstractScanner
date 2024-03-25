@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using Xamarin.Essentials;
 using System.Collections.Generic;
 using System.Threading.Tasks;
@@ -103,7 +103,7 @@ namespace AbstractScanner
 
         void Inititialize()
         {
-            if (Preferences.Get("IsScanTorchOn", false))
+            if (Preferences.Get("IsScanTorchOn", false, Xamarin.Essentials.AppInfo.PackageName))
             {
                 MainThread.BeginInvokeOnMainThread(() =>
                 {
@@ -133,13 +133,13 @@ namespace AbstractScanner
         private void OnTorchButtonClicked(object sender, EventArgs e)
         {
             ToggleTorch();
-            Preferences.Set("IsScanTorchOn", !Preferences.Get("IsScanTorchOn", false));
+            Preferences.Set("IsScanTorchOn", !Preferences.Get("IsScanTorchOn", false, Xamarin.Essentials.AppInfo.PackageName));
             UpdateTorchLabel();
         }
 
         void UpdateTorchLabel()
         {
-            var isOn = Preferences.Get("IsScanTorchOn", false);
+            var isOn = Preferences.Get("IsScanTorchOn", false, Xamarin.Essentials.AppInfo.PackageName);
             System.Diagnostics.Debug.WriteLine("IsTorchOn=[" + isOn + "]");
             TorchButton.Label = isOn
                 ? TorchOnString

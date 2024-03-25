@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Threading.Tasks;
 using AbstractScanner.NetStandard.Hardware;
 
@@ -11,7 +11,7 @@ namespace AbstractScanner.Captuvo.iOS
         public PowerManagement()
         {
             //Settings.CaptuvoDevice.AddCaptuvoDelegate(this);
-            _shareSledBattery = Xamarin.Essentials.Preferences.Get(ShareBatteryKey, false);
+            _shareSledBattery = Xamarin.Essentials.Preferences.Get(ShareBatteryKey, false, Xamarin.Essentials.AppInfo.PackageName);
             if (_shareSledBattery)
                 Settings.CaptuvoDevice.EnableBatteryQuery();
             else
@@ -61,7 +61,7 @@ namespace AbstractScanner.Captuvo.iOS
                         Settings.CaptuvoDevice.EnableBatteryQuery();
                     else
                         Settings.CaptuvoDevice.DisableBatteryQuery();
-                    Xamarin.Essentials.Preferences.Set(ShareBatteryKey, _shareSledBattery);
+                    Xamarin.Essentials.Preferences.Set(ShareBatteryKey, _shareSledBattery, Xamarin.Essentials.AppInfo.PackageName);
                 }
             }
         }
